@@ -16,7 +16,7 @@ This project builds a real-time analytics pipeline for a ride-sharing platform u
 - outputs/task_1/: CSV files with parsed ride records
 - outputs/task_2/: CSV files with driver aggregations per batch
 - outputs/task_3/: CSV files with windowed fare aggregations per batch
-- 
+  
 ## Handson-Spark-Streaming/
 ├── outputs/
 │   ├── task_1/part-00000.csv
