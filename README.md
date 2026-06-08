@@ -1,7 +1,7 @@
 ﻿# Ride Sharing Analytics Using Spark Streaming and Spark SQL
 
 ## Student Information
-- Name: Mounika
+- Name: Gopi Bharath Makkena
 - GitHub: gmakkena9
 - Course: ITCS6190 - Summer 2026
 - Repo: https://github.com/gmakkena9/Handson-Spark-Streaming
@@ -119,13 +119,13 @@ Analyzes fare trends using 5-minute sliding windows sliding every 1 minute with 
     Terminal 1 - Start data generator (keep running the whole time):
     python data_generator.py
 
-    Terminal 2 - Run Task 1 (wait 1-2 minutes then Ctrl+C):
+    Terminal 2 - Run Task 1 
     python task1.py
 
-    Terminal 3 - Run Task 2 (wait 1-2 minutes then Ctrl+C):
+    Terminal 3 - Run Task 2 
     python task2.py
 
-    Terminal 4 - Run Task 3 (wait 5-6 minutes then Ctrl+C):
+    Terminal 4 - Run Task 3 
     python task3.py
 
 ---
