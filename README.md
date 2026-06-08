@@ -17,18 +17,25 @@ This project builds a real-time analytics pipeline for a ride-sharing platform u
 - outputs/task_2/: CSV files with driver aggregations per batch
 - outputs/task_3/: CSV files with windowed fare aggregations per batch
   
-## Handson-Spark-Streaming/
+Handson-Spark-Streaming/
 ├── outputs/
-│   ├── task_1/part-00000.csv
-│   ├── task_2/batch_0/part-00000.csv
-│   ├── task_2/batch_1/part-00000.csv
-│   ├── task_3/batch_0/part-00000.csv
-│   └── task_3/batch_1/part-00000.csv
-├── task1.py
-├── task2.py
-├── task3.py
-├── data_generator.py
-└── README.md
+│   ├── task_1/
+│   │   └── part-00000.csv           <- Parsed streaming ride data
+│   ├── task_2/
+│   │   ├── batch_0/
+│   │   │   └── part-00000.csv       <- Driver aggregations batch 0
+│   │   └── batch_1/
+│   │       └── part-00000.csv       <- Driver aggregations batch 1
+│   └── task_3/
+│       ├── batch_0/
+│       │   └── part-00000.csv       <- Windowed aggregations batch 0
+│       └── batch_1/
+│           └── part-00000.csv       <- Windowed aggregations batch 1
+├── task1.py                         <- Basic streaming ingestion and parsing
+├── task2.py                         <- Real-time driver-level aggregations
+├── task3.py                         <- Windowed time-based analytics
+├── data_generator.py                <- Simulates live ride data over socket
+└── README.md                        <- Project documentation
 
 ## Prerequisites
 1. Python 3.x - https://www.python.org/downloads/
